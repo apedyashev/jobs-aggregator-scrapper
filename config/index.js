@@ -1,9 +1,9 @@
 module.exports = {
   importInterval: 3600000,
   mongo: {
-    server: 'mongodb',
-    port: 27017,
-    dbName: 'jobs-aggregator',
+    server: process.env.DB_HOST || 'mongodb',
+    port: process.env.DB_PORT || 27017,
+    dbName: process.env.DB_NAME || 'jobs-aggregator',
   },
   scrapTargets: {
     jobscout: {
