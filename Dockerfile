@@ -1,15 +1,17 @@
-FROM node:7.4.0
+FROM node:8.1.2-alpine
 
 RUN mkdir /src
-
-RUN npm install nodemon -g
-
+ADD ./ /src
 WORKDIR /src
-ADD ./package.json /src/package.json
 RUN npm install
-
-ADD ./nodemon.json /src/nodemon.json
-
-EXPOSE 8888
-
+RUN npm install -g nodemon
 CMD npm start
+
+#RUN mkdir /src
+#RUN npm install nodemon -g
+#WORKDIR /src
+#ADD ./package.json /src/package.json
+#RUN npm install
+
+#ADD ./nodemon.json /src/nodemon.json
+#CMD npm start

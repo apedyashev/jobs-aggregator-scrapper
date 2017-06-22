@@ -16,13 +16,16 @@
     "start": "nodemon -L scrapper/app.js"
   },
   "dependencies": {
-    "async": "^2.1.4",
-    "lodash": "^4.17.2",
-    "moment": "^2.17.1",
-    "mongoose": "^4.7.1",
-    "request": "^2.79.0",
-    "sprintf": "^0.1.5",
-    "humps": "1.1.0"
+    "async": "2.1.4",
+    "bluebird": "3.5.0",
+    "cheerio": "1.0.0-rc.1",
+    "humps": "1.1.0",
+    "lodash": "4.17.2",
+    "moment": "2.17.1",
+    "mongoose": "4.7.1",
+    "request": "2.79.0",
+    "request-promise": "4.2.1",
+    "sprintf": "0.1.5"
   },
   "devDependencies": {}
 }
