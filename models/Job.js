@@ -3,39 +3,39 @@
 /**
  * Module dependencies.
  */
-var mongoose = require('mongoose'),
-	Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 /**
  * Job Schema
  */
-var JobSchema = new Schema({
+const JobSchema = new Schema({
 	title: {
-		type: String
+		type: String,
 	},
 	shortDescription: {
-		type: String
+		type: String,
 	},
 	levelOfEmployment: {
-		type: String
+		type: String,
 	},
 	city: {
-		type: String
+		type: String,
 	},
 	company: {
-		type: String
+		type: String,
 	},
 	datePosted: {
-		type: Date
+		type: Date,
 	},
 	link: {
 		type: String,
-		unique: true
+		unique: true,
 	},
 	created: {
 		type: Date,
-		default: Date.now
-	}
+		default: Date.now,
+	},
 });
 
 mongoose.model('Job', JobSchema);

@@ -1,0 +1,29 @@
+{
+  "extends": ["eslint:recommended", "google"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+  },
+  "rules": {
+    "max-len": "off",
+    "no-console": "warn",
+    "object-shorthand": "error",
+    "valid-jsdoc": "off",
+    "require-jsdoc": "off",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "exceptions": ["-", "*"]
+      }
+    ]
+  }
+}

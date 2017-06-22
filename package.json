@@ -13,7 +13,9 @@
     "node": ">=0.10.8"
   },
   "scripts": {
-    "start": "nodemon -L scrapper/app.js"
+    "start": "nodemon -L scrapper/app.js",
+    "lint": "eslint ./",
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "async": "2.1.4",
@@ -27,5 +29,9 @@
     "request-promise": "4.2.1",
     "sprintf": "0.1.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "4.0.0",
+    "eslint-config-google": "0.8.0",
+    "husky": "0.13.4"
+  }
 }
